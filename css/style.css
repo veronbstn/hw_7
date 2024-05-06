@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: #46A358;
+    --secondary-color: #3D3D3D;
+    --main-color: #FFFFFF;
+    --bg-secondary-color: #FBFBFB;
+
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-xl: 18px;
+}
+
+body {
+    font-family: 'Cera Pro DEMO', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: var(--font-md);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 171px auto 82px auto;
+    padding: 0 105px;
+}
+
+.content-wrapper {
+    display: flex;
+    max-width: 1228px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.catalog__categories {
+    min-width: 310px;
+    min-height: 774px;
+    padding-top: 14px;
+    padding-left: 18px;
+    background-color: var(--bg-secondary-color);
+}
+
+.catalog__categories h4 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: var(--font-xl);
+    color: var(--secondary-color);
+}
+
+.catalog__categories ul {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    margin-left: 12px;
+    color: var(--secondary-color);
+}
+
+a {
+    font-size: var(--font-md);
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.catalog__categories a.active, .tabs a.active {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.catalog__sidebar img {
+    width: 310px;
+    height: 470px;
+}
+
+.section-wrapper {
+    width: 838px;
+    display: flex;
+}
+
+.catalog__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.catalog__settings ul {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+}
+
+.catalog__settings {
+    width: 100%;
+    max-width: 838px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.sorting {
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.sorting select {
+    border: none;
+    background-color: transparent;
+    padding: 0 0 0 4px;
+    color: var(--secondary-color);
+    font-size: var(--font-md);
+    font-family: 'Cera Pro DEMO', sans-serif;
+}
+
+.catalog__product-image {
+    margin-bottom: 12px;
+    width: 258px;
+    height: 300px;
+}
+
+.catalog__product-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.catalog__product-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 32px;
+    justify-content: space-between;
+}
+
+.catalog__product-card {
+    width: calc(33.33% - 32px);
+    height: 350px;
+    margin-bottom: 70px;
+}
+
+.catalog__product-title {
+    color: var(--secondary-color);
+    margin-bottom: 6px;
+    font-size: var(--font-md);
+}
+
+.catalog__product-price {
+    color: var(--accent-color);
+    font-size: var(--font-xl);
+    font-weight: 700;
+}
+
+.catalog__pagination-wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.catalog__pagination-wrapper img {
+    width: 35px;
+    height: 35px;
+}
